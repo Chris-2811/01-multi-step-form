@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Steps -->
+      <div class="steps">
+        <div class="step">
+          <a href="/index.html" class="step-number">1</a>
+          <div class="step-container">
+            <p class="step-title">Step 1</p>
+            <p class="step-name">Your info</p>
+          </div>
+        </div>
+        <div class="step active">
+          <div class="step-number">2</div>
+          <div class="step-container">
+            <p class="step-title">Step 2</p>
+            <p class="step-name">Select plan</p>
+          </div>
+        </div>
+        <div class="step">
+          <a href="/add-on.html" class="step-number">3</a>
+          <div class="step-container">
+            <p class="step-title">Step 3</p>
+            <p class="step-name">add-ons</p>
+          </div>
+        </div>
+        <div class="step">
+          <a href="/summary.html" class="step-number">4</a>
+          <div class="step-container">
+            <p class="step-title">Step 4</p>
+            <p class="step-name">summary</p>
+          </div>
+        </div>
+      </div>
+      <!-- Form -->
+      <form class="form" id="form">
+        <div>
+          <h1 class="form-title">Select your plan</h1>
+          <p class="form-subtitle">
+            You have the option of monthly or yearly billing.
+          </p>
+          <!-- radio buttons here  -->
+          <div class="form-container-plan">
+            <div class="form-control">
+              <input type="radio" name="plan" id="arcade" />
+              <label class="radio-label" for="arcade">
+                <img
+                  src="/assets/images/icon-arcade.svg"
+                  alt="joystick"
+                  class="plan-icon"
+                />
+                <!-- Monthly -->
+                <div class="plan-details monthly">
+                  <h2 class="plan-title">Arcade</h2>
+                  <p class="plan-price">$9/mo</p>
+                </div>
+                <!-- Yearly -->
+                <div class="plan-details yearly">
+                  <h2 class="plan-title">Arcade</h2>
+                  <p class="plan-price">$90/yr</p>
+                  <p class="plan-discount">2 month for freee</p>
+                </div>
+              </label>
+            </div>
+            <div class="form-control">
+              <input type="radio" name="plan" id="advanced" />
+              <label class="radio-label" for="advanced">
+                <img
+                  src="/assets/images/icon-advanced.svg"
+                  alt="controller"
+                  class="plan-icon"
+                />
+                <!-- Monthly -->
+                <div class="plan-details monthly">
+                  <h2 class="plan-title">Advanced</h2>
+                  <p class="plan-price">$12/mo</p>
+                </div>
+                <!-- Yearly -->
+                <div class="plan-details yearly">
+                  <h2 class="plan-title">Advanced</h2>
+                  <p class="plan-price">$120/yr</p>
+                  <p class="plan-discount">2 month for free</p>
+                </div>
+              </label>
+            </div>
+            <div class="form-control">
+              <input type="radio" name="plan" id="pro" />
+              <label class="radio-label" for="pro">
+                <img
+                  src="/assets/images/icon-pro.svg"
+                  alt="controller"
+                  class="plan-icon"
+                />
+                <!-- Monthly -->
+                <div class="plan-details monthly">
+                  <h2 class="plan-title">Pro</h2>
+                  <p class="plan-price">$15/mo</p>
+                </div>
+                <!-- Yearly -->
+                <div class="plan-details yearly">
+                  <h2 class="plan-title">Pro</h2>
+                  <p class="plan-price">$150/yr</p>
+                  <p class="plan-discount">2 month for free</p>
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="plan-duration-container monthly">
+            <p class="monthly-plan" id="monthly">Monthly</p>
+            <input type="checkbox" id="switch" class="switch" />
+            <label for="switch" class="switch-label"></label>
+            <p class="yearly-plan" id="yearly">Yearly</p>
+          </div>
+        </div>
+
+        <div class="submit-btn-container submit-btn-container__plan">
+          <button id="prev" class="btn-secondary">
+            <a href="/index.html">Go Back</a>
+          </button>
+          <button id="next" class="btn-primary">Next Step</button>
+        </div>
+      </form>
+    </div>
+    <script type="module" src="/step2.js"></script>
+  </body>
+</html>

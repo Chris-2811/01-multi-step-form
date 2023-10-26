@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Steps -->
+      <div class="steps">
+        <div class="step">
+          <a href="/index.html" class="step-number">1</a>
+          <div class="step-container">
+            <p class="step-title">Step 1</p>
+            <p class="step-name">Your info</p>
+          </div>
+        </div>
+        <div class="step">
+          <a href="/plan.html" class="step-number">2</a>
+          <div class="step-container">
+            <p class="step-title">Step 2</p>
+            <p class="step-name">Select plan</p>
+          </div>
+        </div>
+        <div class="step active">
+          <a href="/add-on.html" class="step-number">3</a>
+          <div class="step-container">
+            <p class="step-title">Step 3</p>
+            <p class="step-name">add-ons</p>
+          </div>
+        </div>
+        <div class="step">
+          <a href="/summary.html" class="step-number">4</a>
+          <div class="step-container">
+            <p class="step-title">Step 4</p>
+            <p class="step-name">summary</p>
+          </div>
+        </div>
+      </div>
+      <!-- Form -->
+      <form class="form" id="form">
+        <div>
+          <h1 class="form-title">Pick add-ons</h1>
+          <p class="form-subtitle">
+            Add-ons help enhance your gaming experience.
+          </p>
+          <!-- radio buttons here  -->
+          <div class="form-container-addon">
+            <div class="form-control">
+              <input type="checkbox" name="add-on" id="online-services">
+              <div class="addon-container">
+                <div class="addon-details">
+                  <p class="addon-title">Online service</p>
+                  <p class="addon-description">Access to multiplayer games</p>
+                </div>
+                <p class="addon-price">+$1/mo</p>
+              </div>
+            </div>
+            <div class="form-control">
+              <input type="checkbox" name="add-on" id="larger-storage">
+              <div class="addon-container">
+                <div class="addon-details">
+                  <p class="addon-title">Larger storage</p>
+                  <p class="addon-description">Extra 1TB of cloud save</p>
+                </div>
+                <p class="addon-price">+$2/mo</p>
+              </div>
+            </div>
+            <div class="form-control">
+              <input type="checkbox" name="add-on" id="customizable-profile">
+              <div class="addon-container">
+                <div class="addon-details">
+                  <p class="addon-title">Customizable profile</p>
+                  <p class="addon-description">Custom theme on your profile</p>
+                </div>
+                <p class="addon-price">+$2/mo</p>
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+        <div class="submit-btn-container submit-btn-container__plan">
+          <button id="prev" class="btn-secondary">  <a href="/plan.html">Go Back</a></button>
+          <button id="next" class="btn-primary">Next Step</button>
+        </div>
+    </form>
+    <script type="module" src="/step3.js"></script>
+  </body>
+</html>

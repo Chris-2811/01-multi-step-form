@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Steps -->
+      <div class="steps">
+        <div class="step">
+          <a href="/index.html" class="step-number">1</a>
+          <div class="step-container">
+            <p class="step-title">Step 1</p>
+            <p class="step-name">Your info</p>
+          </div>
+        </div>
+        <div class="step">
+          <a href="/plan.html" class="step-number">2</a>
+          <div class="step-container">
+            <p class="step-title">Step 2</p>
+            <p class="step-name">Select plan</p>
+          </div>
+        </div>
+        <div class="step">
+          <a href="/add-on.html" class="step-number">3</a>
+          <div class="step-container">
+            <p class="step-title">Step 3</p>
+            <p class="step-name">add-ons</p>
+          </div>
+        </div>
+        <div class="step active">
+          <div class="step-number">4</div>
+          <div class="step-container">
+            <p class="step-title">Step 4</p>
+            <p class="step-name">summary</p>
+          </div>
+        </div>
+      </div>
+      <!-- Form -->
+      <form class="form" id="form">
+        <div>
+          <h1 class="form-title">Finishing up</h1>
+          <p class="form-subtitle">
+            Double-check everything looks OK before confirming.
+          </p>
+          <div class="summary-container">
+            <div class="summary-top" id="summary-top"></div>
+            <div class="summary-bottom" id="summary-bottom"></div>
+          </div>
+          <div class="total-price-container" id="total-price-container">
+            <p>Total(per month)</p>
+            <div id="total-price" class="total-price">+$12/mo</div>
+          </div>
+        </div>
+
+        <div class="submit-btn-container submit-btn-container__plan">
+          <button id="prev" class="btn-secondary">
+            <a href="/add-on.html">Go Back</a>
+          </button>
+          <button id="btn-confirm" class="btn-primary confirm">Confirm</button>
+        </div>
+      </form>
+    </div>
+    <script type="module" src="/step4.js"></script>
+  </body>
+</html>
